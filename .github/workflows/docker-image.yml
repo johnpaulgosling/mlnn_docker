@@ -19,8 +19,8 @@ jobs:
 
     - name: Build and tag Docker image
       run: |
-        docker build -t ghcr.io/johnpaulgosling/bcm_docker:latest ./docker
+        docker build -t ghcr.io/johnpaulgosling/mlnn_docker:latest ./docker
 
     - name: Push Docker image to GHCR
       run: |
-        docker push --all-tags ghcr.io/johnpaulgosling/bcm_docker
+        docker push --all-tags ghcr.io/johnpaulgosling/mlnn_docker

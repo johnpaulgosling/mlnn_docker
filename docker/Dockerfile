@@ -30,14 +30,11 @@ RUN Rscript -e 'install.packages("codetools")' \
     && Rscript -e 'install.packages("RcppEigen")' \
     && Rscript -e 'install.packages("data.table")' \
     && Rscript -e 'install.packages("ggplot2")' \
-    && Rscript -e 'install.packages("coda")' \
-    && Rscript -e 'install.packages("loo")' \
-    && Rscript -e 'install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")), version = "2.26.13")' \
+    && Rscript -e 'install.packages("coda")' 
     && Rscript -e 'install.packages("commonmark")' \
     && Rscript -e 'install.packages("markdown")' \
     && Rscript -e 'install.packages("rmarkdown")' \
-    && Rscript -e 'install.packages("tidyverse")' \
-    && Rscript -e 'install.packages("mcmcse")'
+    && Rscript -e 'install.packages("tidyverse")'
 
 ## Install git and RStudio Server
 RUN apt-get install --yes --no-install-recommends gdebi-core git-all \

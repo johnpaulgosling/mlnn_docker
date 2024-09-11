@@ -1,6 +1,6 @@
 {
   "name": "${localWorkspaceFolderBasename}_v1.0.0",
-  "image": "ghcr.io/johnpaulgosling/bcm_docker:latest",
+  "image": "ghcr.io/johnpaulgosling/mlnn_docker:latest",
   "forwardPorts": [8787],
   "portsAttributes": {
     "8787": {
