@@ -30,11 +30,23 @@ RUN Rscript -e 'install.packages("codetools")' \
     && Rscript -e 'install.packages("RcppEigen")' \
     && Rscript -e 'install.packages("data.table")' \
     && Rscript -e 'install.packages("ggplot2")' \
-    && Rscript -e 'install.packages("coda")' 
+    && Rscript -e 'install.packages("coda")' \
     && Rscript -e 'install.packages("commonmark")' \
     && Rscript -e 'install.packages("markdown")' \
     && Rscript -e 'install.packages("rmarkdown")' \
-    && Rscript -e 'install.packages("tidyverse")'
+    && Rscript -e 'install.packages("tidyverse")' \
+    && Rscript -e 'install.packages("rpart")' \
+    && Rscript -e 'install.packages("rpart.plot")' \
+    && Rscript -e 'install.packages("datasets")' \
+    && Rscript -e 'install.packages("caret")' \
+    && Rscript -e 'install.packages("earth")' \
+    && Rscript -e 'install.packages("kknn")' \
+    && Rscript -e 'install.packages("adabag")' \
+    && Rscript -e 'install.packages("e1071")' \
+    && Rscript -e 'install.packages("boot")' \
+    && Rscript -e 'install.packages("randomForest")' \
+    && Rscript -e 'install.packages("dbscan")' \
+    && Rscript -e 'install.packages("xgboost")'
 
 ## Install git and RStudio Server
 RUN apt-get install --yes --no-install-recommends gdebi-core git-all \
