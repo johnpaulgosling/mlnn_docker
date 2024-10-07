@@ -46,6 +46,13 @@ RUN Rscript -e 'install.packages("codetools")' \
     && Rscript -e 'install.packages("boot")' \
     && Rscript -e 'install.packages("randomForest")' \
     && Rscript -e 'install.packages("dbscan")' \
+    && Rscript -e 'install.packages("klaR")' \
+    && Rscript -e 'install.packages("readr")' \
+    && Rscript -e 'install.packages("class")' \
+    && Rscript -e 'install.packages("glmnet")' \
+    && Rscript -e 'install.packages("DALEX")' \
+    && Rscript -e 'install.packages("Rtsne")' \
+    && Rscript -e 'install.packages("KODAMA")' \
     && Rscript -e 'install.packages("xgboost")'
 
 ## Install git and RStudio Server
