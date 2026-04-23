@@ -6,8 +6,15 @@
     "8787": {
       "label": "RStudio",
       "requireLocalPort": false,
-      "onAutoForward": "ignore"
+      "onAutoForward": "openBrowser",
+      "protocol": "https",
+      "elevateIfNeeded": true
     }
   },
-  "postAttachCommand": "sudo rstudio-server start"
+  "postAttachCommand": "sudo rstudio-server start",
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    }
+  }
 }
