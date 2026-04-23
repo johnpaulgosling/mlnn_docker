@@ -8,6 +8,7 @@
       "requireLocalPort": false,
       "onAutoForward": "openBrowser",
       "protocol": "https",
+      "waitFor": "silent",
       "elevateIfNeeded": true
     }
   },
